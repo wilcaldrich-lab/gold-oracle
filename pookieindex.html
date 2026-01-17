@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.3">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;GOLD ORACLE v2.0 - Strategic Intelligence&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&amp;family=Rajdhani:wght@400;600;700&amp;family=Fira+Code:wght@400&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--bg-primary: #05080f;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--bg-secondary: #0d121f;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--text-primary: #fcee09;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--text-secondary: #8b95a5;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--neon-blue: #00d9ff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--neon-pink: #ff006e;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--neon-yellow: #fcee09;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--terminal-green: #00ff41;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>* { margin: 0; padding: 0; box-sizing: border-box; cursor: crosshair; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: var(--bg-primary);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text-primary);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Rajdhani', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>min-height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow-x: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body::before {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>content: " ";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: fixed;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>top: 0; left: 0; bottom: 0; right: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), <span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));</p>
+<p class="p1"><span class="Apple-converted-space">            </span>z-index: 9999;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-size: 100% 4px, 3px 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>pointer-events: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.container { max-width: 1600px; margin: 0 auto; position: relative; z-index: 2; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>header {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid var(--neon-blue);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(0, 217, 255, 0.05);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Orbitron', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: clamp(2rem, 5vw, 4rem);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 900;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>letter-spacing: 0.3em;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--neon-blue);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-shadow: 2px 2px var(--neon-pink), -2px -2px #000;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.status-bar {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Fira Code', monospace;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.8rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--neon-pink);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-top: 1px solid rgba(255, 0, 110, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-top: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.price-grid {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 3rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.price-chamber {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: var(--bg-secondary);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid rgba(0, 217, 255, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.price-chamber:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-color: var(--neon-yellow);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(252, 238, 9, 0.05);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: scale(1.02);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.price-label {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Orbitron', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.75rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text-secondary);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.price-value { font-size: 1.8rem; font-weight: 700; color: var(--neon-yellow); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btc-conversion { color: var(--neon-blue); font-family: 'Fira Code', monospace; font-size: 0.9rem; margin-top: 5px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 10px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.news-card { background: rgba(13, 18, 31, 0.8); border-left: 3px solid var(--neon-pink); padding: 1rem; font-size: 0.9rem; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.tag { display: inline-block; padding: 2px 6px; font-size: 0.6rem; font-weight: bold; background: var(--neon-pink); color: white; margin-right: 5px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.status-dot { height: 10px; width: 10px; background-color: #bbb; border-radius: 50%; display: inline-block; margin-right: 5px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.status-online { background-color: var(--terminal-green); box-shadow: 0 0 8px var(--terminal-green); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1&gt;GOLD ORACLE&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="subtitle"&gt;STRATEGIC COMMODITY INTELLIGENCE • SYSTEM v2.0&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="status-bar"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div id="connectionStatus"&gt;&lt;span id="dot" class="status-dot"&gt;&lt;/span&gt;NET_STATUS: INITIALIZING...&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div id="timestamp"&gt;SYNCING...&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div id="nodeId"&gt;NODE: X-99_BRAVO&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="price-grid" id="priceGrid"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 style="font-family: Orbitron; margin-bottom: 1rem; color: var(--neon-blue); border-bottom: 1px solid var(--neon-blue);"&gt;&gt; INTEL_FEED_AGGREGATOR&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="news-grid" id="newsGrid"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const PROXY = 'https://api.allorigins.win/get?url=';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const COMMODITIES = [</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ id: 'btc', label: 'Bitcoin (Scarcity Benchmark)', usd: 0, isBtc: true },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ id: 'gold', label: 'Gold (Troy Ounce)', usd: 2714 },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ id: 'silver', label: 'Silver (Troy Ounce)', usd: 31 },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ id: 'oil', label: 'Crude Oil (WTI Barrel)', usd: 72 },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ id: 'f35', label: 'F-35 Lightning II', usd: 82500000 },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ id: 'carrier', label: 'Ford-Class Carrier', usd: 13000000000 }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>let btcPrice = 96000;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>async function fetchPrices() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>try {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const res = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&amp;vs_currencies=usd');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const data = await res.json();</p>
+<p class="p1"><span class="Apple-converted-space">                </span>btcPrice = data.bitcoin.usd;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>document.getElementById('connectionStatus').innerHTML = '&lt;span class="status-dot status-online"&gt;&lt;/span&gt;NET_STATUS: OPERATIONAL';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>renderPrices();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} catch (e) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>document.getElementById('connectionStatus').textContent = 'NET_STATUS: OFFLINE_MODE';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>renderPrices();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function renderPrices() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const grid = document.getElementById('priceGrid');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>grid.innerHTML = COMMODITIES.map(c =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const currentUsd = c.isBtc ? btcPrice : c.usd;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const btcVal = (currentUsd / btcPrice).toFixed(8);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>return `</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="price-chamber"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="price-label"&gt;${c.label}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="price-value"&gt;$${currentUsd.toLocaleString()}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="btc-conversion"&gt;₿ ${btcVal}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}).join('');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>async function fetchNews() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const newsGrid = document.getElementById('newsGrid');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const feeds = [</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ name: 'ZeroHedge', url: 'https://cms.zerohedge.com/fullrss2.xml', cat: 'GEOPOL' },</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ name: 'GoldSeek', url: 'https://news.goldseek.com/rss.php', cat: 'METALS' }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>let articles = [];</p>
+<p class="p1"><span class="Apple-converted-space">            </span>for (const feed of feeds) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>try {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const res = await fetch(`${PROXY}${encodeURIComponent(feed.url)}`);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const data = await res.json();</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const parser = new DOMParser();</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const xml = parser.parseFromString(data.contents, "text/xml");</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const items = xml.querySelectorAll("item");</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>items.forEach((item, idx) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>if (idx &lt; 3) articles.push({</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>title: item.querySelector("title").textContent,</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>link: item.querySelector("link").textContent,</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>source: feed.name,</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>tag: feed.cat</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">                </span>} catch (e) { console.error("Feed error", e); }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>newsGrid.innerHTML = articles.map(a =&gt; `</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="news-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="tag"&gt;${a.tag}&lt;/span&gt; &lt;strong&gt;${a.source}&lt;/strong&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="${a.link}" target="_blank" style="color:white; text-decoration:none;"&gt;${a.title}&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;`).join('');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function updateClock() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('timestamp').textContent = `SYS_TIME: ${new Date().toUTCString()}`;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>fetchPrices();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>fetchNews();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>setInterval(updateClock, 1000);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
