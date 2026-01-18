@@ -6,192 +6,192 @@
   <title>GOLD ORACLE v2.0 - Strategic Intelligence</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&family=Fira+Code:wght@400&display=swap" rel="stylesheet">
   <style>
-        :root {
-            --bg-primary: #05080f;
-            --bg-secondary: #0d121f;
-            --text-primary: #fcee09;
-            --text-secondary: #8b95a5;
-            --neon-blue: #00d9ff;
-            --neon-pink: #ff006e;
-            --neon-yellow: #fcee09;
-            --terminal-green: #00ff41;
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; cursor: crosshair; }
-        body {
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            font-family: 'Rajdhani', sans-serif;
-            min-height: 100vh;
-            padding: 1rem;
-            overflow-x: hidden;
-        }
-        body::before {
-            content: " ";
-            display: block;
-            position: fixed;
-            top: 0; left: 0; bottom: 0; right: 0;
-            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
-                        linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-            z-index: 9999;
-            background-size: 100% 4px, 3px 100%;
-            pointer-events: none;
-        }
-        .container { max-width: 1600px; margin: 0 auto; position: relative; z-index: 2; }
-        header {
-            text-align: center;
-            margin-bottom: 2rem;
-            border: 1px solid var(--neon-blue);
-            padding: 1.5rem;
-            background: rgba(0, 217, 255, 0.05);
-            clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px);
-        }
-        h1 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: clamp(2rem, 5vw, 4rem);
-            font-weight: 900;
-            letter-spacing: 0.3em;
-            color: var(--neon-blue);
-            text-shadow: 2px 2px var(--neon-pink), -2px -2px #000;
-            margin-bottom: 0.5rem;
-        }
-        .status-bar {
-            display: flex;
-            justify-content: space-between;
-            font-family: 'Fira Code', monospace;
-            font-size: 0.8rem;
-            color: var(--neon-pink);
-            border-top: 1px solid rgba(255, 0, 110, 0.3);
-            padding-top: 0.5rem;
-            margin-top: 1rem;
-        }
-        .price-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 15px;
-            margin-bottom: 3rem;
-        }
-        .price-chamber {
-            background: var(--bg-secondary);
-            border: 1px solid rgba(0, 217, 255, 0.3);
-            padding: 1rem;
-            position: relative;
-            transition: 0.3s;
-        }
-        .price-chamber:hover {
-            border-color: var(--neon-yellow);
-            background: rgba(252, 238, 9, 0.05);
-            transform: scale(1.02);
-        }
-        .price-label {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 0.75rem;
-            color: var(--text-secondary);
-            margin-bottom: 0.5rem;
-        }
-        .price-value { font-size: 1.8rem; font-weight: 700; color: var(--neon-yellow); }
-        .btc-conversion { color: var(--neon-blue); font-family: 'Fira Code', monospace; font-size: 0.9rem; margin-top: 5px; }
-        .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 10px; }
-        .news-card { background: rgba(13, 18, 31, 0.8); border-left: 3px solid var(--neon-pink); padding: 1rem; font-size: 0.9rem; }
-        .tag { display: inline-block; padding: 2px 6px; font-size: 0.6rem; font-weight: bold; background: var(--neon-pink); color: white; margin-right: 5px; }
-        .status-dot { height: 10px; width: 10px; background-color: #bbb; border-radius: 50%; display: inline-block; margin-right: 5px; }
-        .status-online { background-color: var(--terminal-green); box-shadow: 0 0 8px var(--terminal-green); }
-    </style>
+    :root {
+        --bg-primary: #05080f;
+        --bg-secondary: #0d121f;
+        --text-primary: #fcee09;
+        --text-secondary: #8b95a5;
+        --neon-blue: #00d9ff;
+        --neon-pink: #ff006e;
+        --neon-yellow: #fcee09;
+        --terminal-green: #00ff41;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; cursor: crosshair; }
+    body {
+        background: var(--bg-primary);
+        color: var(--text-primary);
+        font-family: 'Rajdhani', sans-serif;
+        min-height: 100vh;
+        padding: 1rem;
+        overflow-x: hidden;
+    }
+    body::before {
+        content: " ";
+        display: block;
+        position: fixed;
+        top: 0; left: 0; bottom: 0; right: 0;
+        background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+                    linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+        z-index: 9999;
+        background-size: 100% 4px, 3px 100%;
+        pointer-events: none;
+    }
+    .container { max-width: 1600px; margin: 0 auto; position: relative; z-index: 2; }
+    header {
+        text-align: center;
+        margin-bottom: 2rem;
+        border: 1px solid var(--neon-blue);
+        padding: 1.5rem;
+        background: rgba(0, 217, 255, 0.05);
+        clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px);
+    }
+    h1 {
+        font-family: 'Orbitron', sans-serif;
+        font-size: clamp(2rem, 5vw, 4rem);
+        font-weight: 900;
+        letter-spacing: 0.3em;
+        color: var(--neon-blue);
+        text-shadow: 2px 2px var(--neon-pink), -2px -2px #000;
+        margin-bottom: 0.5rem;
+    }
+    .status-bar {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Fira Code', monospace;
+        font-size: 0.8rem;
+        color: var(--neon-pink);
+        border-top: 1px solid rgba(255, 0, 110, 0.3);
+        padding-top: 0.5rem;
+        margin-top: 1rem;
+    }
+    .price-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 15px;
+        margin-bottom: 3rem;
+    }
+    .price-chamber {
+        background: var(--bg-secondary);
+        border: 1px solid rgba(0, 217, 255, 0.3);
+        padding: 1rem;
+        position: relative;
+        transition: 0.3s;
+    }
+    .price-chamber:hover {
+        border-color: var(--neon-yellow);
+        background: rgba(252, 238, 9, 0.05);
+        transform: scale(1.02);
+    }
+    .price-label {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 0.75rem;
+        color: var(--text-secondary);
+        margin-bottom: 0.5rem;
+    }
+    .price-value { font-size: 1.8rem; font-weight: 700; color: var(--neon-yellow); }
+    .btc-conversion { color: var(--neon-blue); font-family: 'Fira Code', monospace; font-size: 0.9rem; margin-top: 5px; }
+    .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 10px; }
+    .news-card { background: rgba(13, 18, 31, 0.8); border-left: 3px solid var(--neon-pink); padding: 1rem; font-size: 0.9rem; }
+    .tag { display: inline-block; padding: 2px 6px; font-size: 0.6rem; font-weight: bold; background: var(--neon-pink); color: white; margin-right: 5px; }
+    .status-dot { height: 10px; width: 10px; background-color: #bbb; border-radius: 50%; display: inline-block; margin-right: 5px; }
+    .status-online { background-color: var(--terminal-green); box-shadow: 0 0 8px var(--terminal-green); }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>GOLD ORACLE</h1>
-            <div class="subtitle">STRATEGIC COMMODITY INTELLIGENCE • SYSTEM v2.0</div>
-            <div class="status-bar">
-                <div id="connectionStatus"><span id="dot" class="status-dot"></span>NET_STATUS: INITIALIZING...</div>
-                <div id="timestamp">SYNCING...</div>
-                <div id="nodeId">NODE: X-99_BRAVO</div>
-            </div>
-        </header>
-        <div class="price-grid" id="priceGrid"></div>
-        <h2 style="font-family: Orbitron; margin-bottom: 1rem; color: var(--neon-blue); border-bottom: 1px solid var(--neon-blue);">&gt;&gt; INTEL_FEED_AGGREGATOR</h2>
-        <div class="news-grid" id="newsGrid"></div>
-    </div>
+  <div class="container">
+    <header>
+      <h1>GOLD ORACLE</h1>
+      <div class="subtitle">STRATEGIC COMMODITY INTELLIGENCE • SYSTEM v2.0</div>
+      <div class="status-bar">
+        <div id="connectionStatus"><span id="dot" class="status-dot"></span>NET_STATUS: INITIALIZING...</div>
+        <div id="timestamp">SYNCING...</div>
+        <div id="nodeId">NODE: X-99_BRAVO</div>
+      </div>
+    </header>
+    <div class="price-grid" id="priceGrid"></div>
+    <h2 style="font-family: Orbitron; margin-bottom: 1rem; color: var(--neon-blue); border-bottom: 1px solid var(--neon-blue);">&gt; INTEL_FEED_AGGREGATOR</h2>
+    <div class="news-grid" id="newsGrid"></div>
+  </div>
 
-    <script>
-        const PROXY = 'https://api.allorigins.win/get?url=';
-        const COMMODITIES = [
-            { id: 'btc', label: 'Bitcoin (Scarcity Benchmark)', usd: 0, isBtc: true },
-            { id: 'gold', label: 'Gold (Troy Ounce)', usd: 2714 },
-            { id: 'silver', label: 'Silver (Troy Ounce)', usd: 31 },
-            { id: 'oil', label: 'Crude Oil (WTI Barrel)', usd: 72 },
-            { id: 'f35', label: 'F-35 Lightning II', usd: 82500000 },
-            { id: 'carrier', label: 'Ford-Class Carrier', usd: 13000000000 }
+  <script>
+    const PROXY = 'https://api.allorigins.win/get?url=';
+    const COMMODITIES = [
+        { id: 'btc', label: 'Bitcoin (Scarcity Benchmark)', usd: 0, isBtc: true },
+        { id: 'gold', label: 'Gold (Troy Ounce)', usd: 2714 },
+        { id: 'silver', label: 'Silver (Troy Ounce)', usd: 31 },
+        { id: 'oil', label: 'Crude Oil (WTI Barrel)', usd: 72 },
+        { id: 'f35', label: 'F-35 Lightning II', usd: 82500000 },
+        { id: 'carrier', label: 'Ford-Class Carrier', usd: 13000000000 }
+    ];
+
+    let btcPrice = 96000;
+
+    async function fetchPrices() {
+        try {
+            const res = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd');
+            const data = await res.json();
+            btcPrice = data.bitcoin.usd;
+            document.getElementById('connectionStatus').innerHTML = '<span class="status-dot status-online"></span>NET_STATUS: OPERATIONAL';
+            renderPrices();
+        } catch (e) {
+            document.getElementById('connectionStatus').textContent = 'NET_STATUS: OFFLINE_MODE';
+            renderPrices();
+        }
+    }
+
+    function renderPrices() {
+        const grid = document.getElementById('priceGrid');
+        grid.innerHTML = COMMODITIES.map(c => {
+            const currentUsd = c.isBtc ? btcPrice : c.usd;
+            const btcVal = (currentUsd / btcPrice).toFixed(8);
+            return `
+                <div class="price-chamber">
+                    <div class="price-label">${c.label}</div>
+                    <div class="price-value">$${currentUsd.toLocaleString()}</div>
+                    <div class="btc-conversion">₿ ${btcVal}</div>
+                </div>`;
+        }).join('');
+    }
+
+    async function fetchNews() {
+        const newsGrid = document.getElementById('newsGrid');
+        const feeds = [
+            { name: 'ZeroHedge', url: 'https://cms.zerohedge.com/fullrss2.xml', cat: 'GEOPOL' },
+            { name: 'GoldSeek', url: 'https://news.goldseek.com/rss.php', cat: 'METALS' }
         ];
 
-        let btcPrice = 96000;
-
-        async function fetchPrices() {
+        let articles = [];
+        for (const feed of feeds) {
             try {
-                const res = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd');
+                const res = await fetch(`${PROXY}${encodeURIComponent(feed.url)}`);
                 const data = await res.json();
-                btcPrice = data.bitcoin.usd;
-                document.getElementById('connectionStatus').innerHTML = '<span class="status-dot status-online"></span>NET_STATUS: OPERATIONAL';
-                renderPrices();
-            } catch (e) {
-                document.getElementById('connectionStatus').textContent = 'NET_STATUS: OFFLINE_MODE';
-                renderPrices();
-            }
-        }
-
-        function renderPrices() {
-            const grid = document.getElementById('priceGrid');
-            grid.innerHTML = COMMODITIES.map(c => {
-                const currentUsd = c.isBtc ? btcPrice : c.usd;
-                const btcVal = (currentUsd / btcPrice).toFixed(8);
-                return `
-                    <div class="price-chamber">
-                        <div class="price-label">${c.label}</div>
-                        <div class="price-value">$${currentUsd.toLocaleString()}</div>
-                        <div class="btc-conversion">₿ ${btcVal}</div>
-                    </div>`;
-            }).join('');
-        }
-
-        async function fetchNews() {
-            const newsGrid = document.getElementById('newsGrid');
-            const feeds = [
-                { name: 'ZeroHedge', url: 'https://cms.zerohedge.com/fullrss2.xml', cat: 'GEOPOL' },
-                { name: 'GoldSeek', url: 'https://news.goldseek.com/rss.php', cat: 'METALS' }
-            ];
-
-            let articles = [];
-            for (const feed of feeds) {
-                try {
-                    const res = await fetch(`${PROXY}${encodeURIComponent(feed.url)}`);
-                    const data = await res.json();
-                    const parser = new DOMParser();
-                    const xml = parser.parseFromString(data.contents, "text/xml");
-                    const items = xml.querySelectorAll("item");
-                    items.forEach((item, idx) => {
-                        if (idx < 3) articles.push({
-                            title: item.querySelector("title").textContent,
-                            link: item.querySelector("link").textContent,
-                            source: feed.name,
-                            tag: feed.cat
-                        });
+                const parser = new DOMParser();
+                const xml = parser.parseFromString(data.contents, "text/xml");
+                const items = xml.querySelectorAll("item");
+                items.forEach((item, idx) => {
+                    if (idx < 3) articles.push({
+                        title: item.querySelector("title").textContent,
+                        link: item.querySelector("link").textContent,
+                        source: feed.name,
+                        tag: feed.cat
                     });
-                } catch (e) { console.error("Feed error", e); }
-            }
-            newsGrid.innerHTML = articles.map(a => `
-                <div class="news-card">
-                    <span class="tag">${a.tag}</span> <strong>${a.source}</strong><br>
-                    <a href="${a.link}" target="_blank" style="color:white; text-decoration:none;">${a.title}</a>
-                </div>`).join('');
+                });
+            } catch (e) { console.error("Feed error", e); }
         }
+        newsGrid.innerHTML = articles.map(a => `
+            <div class="news-card">
+                <span class="tag">${a.tag}</span> <strong>${a.source}</strong><br>
+                <a href="${a.link}" target="_blank" style="color:white; text-decoration:none;">${a.title}</a>
+            </div>`).join('');
+    }
 
-        function updateClock() {
-            document.getElementById('timestamp').textContent = `SYS_TIME: ${new Date().toUTCString()}`;
-        }
+    function updateClock() {
+        document.getElementById('timestamp').textContent = `SYS_TIME: ${new Date().toUTCString()}`;
+    }
 
-        fetchPrices();
-        fetchNews();
-        setInterval(updateClock, 1000);
-    </script>
+    fetchPrices();
+    fetchNews();
+    setInterval(updateClock, 1000);
+  </script>
 </body>
 </html>
